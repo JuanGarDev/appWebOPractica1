@@ -1,0 +1,7 @@
+logica\Verificador.class
+datos\ControladoraBD.class
+logica\UsuarioBean.class
+datos\Conexion.class
+test\Test.class
+datos\BaseDatos.class
+web\ServletIndex.class
