@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="estilos/generales.css">
         <title>Inicio</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
 
-        <article id="formulario">
+        <div id="formulario">
             <div class="contenedor">
-
-                <form action="/RegistroClientes/ServletIndex" method="post">
-                    <div>
-                        <label for="usuario">Usuario</label>
-                        <input type="text" name="usuario" id="usuario">
-                    </div>
-                    <div>
-                        <label for="contrasena">Contrasena</label>
-                        <input type="password" name="contrasena" id="contrasena">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div>
-                        <input type="submit" value="Entrar">
-                    </div>
-                </form>
-
+                <div class="titulo">
+                    <h1>Ingresar</h1>
+                </div>
+                <div class="form-cont">
+                    <form action="/RegistroClientes/ServletIndex" method="post">
+                        <div>
+                            <label for="usuario">Usuario</label>
+                            <input type="text" name="usuario" id="usuario">
+                        </div>
+                        <div>
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" name="contrasena" id="contrasena">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <input class="boton" type="submit" value="Entrar">
+                        </div>
+                    </form>
+                </div>
+                    
             </div>
-        </article>
+        </div>
+
+        <div id="enlaces">
+            <div class="contenedor">
+                <a href="registrar.html">Crear una cuenta</a>
+            </div>
+        </div>
 
     </body>
 </html>
