@@ -31,7 +31,7 @@ public class ServletIndex extends HttpServlet {
         UsuarioBean usuarioBean = new UsuarioBean(request.getParameter("usuario"),
                 request.getParameter("contrasena"), request.getParameter("email"));
 
-        UsuarioBean u = null;
+        UsuarioBean u;
 
         if (bd.existeUsuario(usuarioBean.getUsuario())) {
             u = bd.buscarUsuario(usuarioBean.getUsuario());
